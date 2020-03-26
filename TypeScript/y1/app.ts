@@ -5,11 +5,8 @@ const add = (
   resultStr: string
 ) => {
   const result = n1 + n2;
-  if (showResult) {
-    console.log(resultStr + result);
-  } else {
-    return result;
-  }
+  if (showResult) console.log(resultStr + result);
+  return result;
 };
 
 const number1 = 5;
