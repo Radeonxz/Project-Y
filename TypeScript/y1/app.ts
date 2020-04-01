@@ -1,19 +1,21 @@
-const add = (
-  n1: number,
-  n2: number,
-  showResult: boolean,
-  resultStr: string
-) => {
-  const result = n1 + n2;
-  if (showResult) console.log(resultStr + result);
-  return result;
+const person: {
+  name: string;
+  age: number;
+  hobbies: string[];
+  role: [number, string];
+} = {
+  name: "John Doe",
+  age: 10,
+  hobbies: ["foo", "bar"],
+  role: [2, "author"]
 };
 
-const number1 = 5;
-const number2 = 2.8;
-const printResult = true;
-const resultString = "Result is: ";
+// person.role.push("admin")
+// person.role[1] = 10;
 
-const result = add(number1, number2, printResult, resultString);
+let favoriteActivities: string[];
+favoriteActivities = ["foo"];
 
-console.log("result is ", result);
+for (const hobby of person.hobbies) {
+  console.log(hobby);
+}
